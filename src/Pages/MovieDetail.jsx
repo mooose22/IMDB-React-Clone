@@ -45,7 +45,7 @@ const MovieDetail = () => {
             <div className="detail-p">
               <h2>
                 {movieDetail && !isNaN(movieDetail.vote_average)
-                  ? parseFloat(movieDetail.vote_average).toFixed(2)
+                  ? parseFloat(movieDetail.vote_average).toFixed(1)
                   : ""}
                 <i style={{ color: "gold" }} className="fas fa-star" />
               </h2>
